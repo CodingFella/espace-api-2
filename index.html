@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Schedule</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+    
+
+    <div class="rectangle"></div>
+
+    <div class="container">
+        <div class="left-column">
+            <div class="text-filter">Date</div>
+            <input type="date" id="dateInput">
+            <div class="text-filter">Start Time</div>
+            <input type="time" id="startTime" placeholder="Start Time">
+            <div class="text-filter">End Time</div>
+            <input type="time" id="endTime" placeholder="End Time">
+
+            <div class="api-button" id="api">
+                <div class="status-text">API Update</div>
+            </div>
+        </div>
+        <div class="right-column">
+            <h2>Activities</h2>
+            <hr>
+
+            <div class="button-region">
+                <div class="plain-button button" id="room0">
+                    <div class="text1">Available</div>
+                    <div class="text2">Dining Area I</div>
+                    <div class="text3"></div>
+                </div>
+                <div class="plain-button button" id="room1">
+                    <div class="text1">Available</div>
+                    <div class="text2">Dining Area II</div>
+                    <div class="text3"></div>
+                </div>
+                <div class="button plain-button" id="room2">
+                    <div class="text1">Available</div>
+                    <div class="text2">Plaza Booth1</div>
+                    <div class="text3"></div>
+                </div>
+                <div class="button plain-button" id="room3">
+                    <div class="text1">Available</div>
+                    <div class="text2">Plaza Booth2</div>
+                    <div class="text3"></div>
+                </div>
+                <div class="button plain-button" id="room4">
+                    <div class="text1">Available</div>
+                    <div class="text2">Plaza Booth A</div>
+                    <div class="text3"></div>
+                </div>
+                <div class="button plain-button" id="room5">
+                    <div class="text1">Available</div>
+                    <div class="text2">Plaza Booth B</div>
+                    <div class="text3"></div>
+                </div>
+                <div class="button plain-button" id="room6">
+                    <div class="text1">Available</div>
+                    <div class="text2">A3</div>
+                    <div class="text3"></div>
+                </div>
+                <div class="button plain-button" id="room7">
+                    <div class="text1">Available</div>
+                    <div class="text2">River Plaza</div>
+                    <div class="text3"></div>
+                </div>
+                <div class="button plain-button" id="room8">
+                    <div class="text1">Available</div>
+                    <div class="text2">Y4</div>
+                    <div class="text3"></div>
+                </div>
+            </div>
+            
+            <h2>Chapels</h2>
+            <hr>
+            
+            <div class="button-region">
+                <div class="button plain-button" id="room9">
+                    <div class="text1">Available</div>
+                    <div class="text2">C1</div>
+                    <div class="text3"></div>
+                </div>
+                <div class="button plain-button" id="room10">
+                    <div class="text1">Available</div>
+                    <div class="text2">F1</div>
+                    <div class="text3"></div>
+                </div>
+                <div class="button plain-button" id="room11">
+                    <div class="text1">Available</div>
+                    <div class="text2">SG1</div>
+                    <div class="text3"></div>
+                </div>
+            </div>
+
+            <h2>Children Center</h2>
+            <hr>
+
+            <div class="button-region">
+                <div class="button plain-button" id="room12">
+                    <div class="text1">Available</div>
+                    <div class="text2">K4 (Splash)</div>
+                    <div class="text3"></div>
+                </div>
+                <div class="button plain-button" id="room13">
+                    <div class="text1">Available</div>
+                    <div class="text2">K8</div>
+                    <div class="text3"></div>
+                </div>
+                <div class="button plain-button" id="room14">
+                    <div class="text1">Available</div>
+                    <div class="text2">K9</div>
+                    <div class="text3"></div>
+                </div>
+                <div class="button plain-button" id="room15">
+                    <div class="text1">Available</div>
+                    <div class="text2">K10</div>
+                    <div class="text3"></div>
+                </div>
+                <div class="button plain-button" id="room16">
+                    <div class="text1">Available</div>
+                    <div class="text2">K11 (Checkout)</div>
+                    <div class="text3"></div>
+                </div>
+                <div class="button plain-button" id="room17">
+                    <div class="text1">Available</div>
+                    <div class="text2">K12 (Dive)</div>
+                    <div class="text3"></div>
+                </div>
+            </div>
+
+            <h2>Classrooms</h2>
+            <hr>
+            
+            <div class="button-region">
+                <div class="button plain-button" id="room18">
+                    <div class="text1">Available</div>
+                    <div class="text2">E5</div>
+                    <div class="text3"></div>
+                </div>
+                <div class="button plain-button" id="room19">
+                    <div class="text1">Available</div>
+                    <div class="text2">E6</div>
+                    <div class="text3"></div>
+                </div>
+                <div class="button plain-button" id="room20">
+                    <div class="text1">Available</div>
+                    <div class="text2">F2</div>
+                    <div class="text3"></div>
+                </div>
+                <div class="button plain-button" id="room21">
+                    <div class="text1">Available</div>
+                    <div class="text2">G10</div>
+                    <div class="text3"></div>
+                </div>
+                <div class="button plain-button" id="room22">
+                    <div class="text1">Available</div>
+                    <div class="text2">G11</div>
+                    <div class="text3"></div>
+                </div>
+                <div class="button plain-button" id="room23">
+                    <div class="text1">Available</div>
+                    <div class="text2">G5</div>
+                    <div class="text3"></div>
+                </div>
+                <div class="button plain-button" id="room24">
+                    <div class="text1">Available</div>
+                    <div class="text2">G6</div>
+                    <div class="text3"></div>
+                </div>
+                <div class="button plain-button" id="room25">
+                    <div class="text1">Available</div>
+                    <div class="text2">H18</div>
+                    <div class="text3"></div>
+                </div>
+                <div class="button plain-button" id="room26">
+                    <div class="text1">Available</div>
+                    <div class="text2">Y2</div>
+                    <div class="text3"></div>
+                </div>
+                <div class="button plain-button" id="room27">
+                    <div class="text1">Available</div>
+                    <div class="text2">Y5</div>
+                    <div class="text3"></div>
+                </div>
+            </div>
+
+            <h2>Lobby</h2>
+            <hr>
+
+            <div class="button-region">
+                <div class="button plain-button" id="room28">
+                    <div class="text1">Available</div>
+                    <div class="text2">Booth 1</div>
+                    <div class="text3"></div>
+                </div>
+                <div class="button plain-button" id="room29">
+                    <div class="text1">Available</div>
+                    <div class="text2">Booth 2</div>
+                    <div class="text3"></div>
+                </div>
+            </div>
+
+            <h2>Nursery / Preschool Room</h2>
+            <hr>
+
+            <div class="button-region">
+                <div class="button plain-button" id="room30">
+                    <div class="text1">Available</div>
+                    <div class="text2">D4/D7</div>
+                    <div class="text3"></div>
+                </div>
+                <div class="button plain-button" id="room31">
+                    <div class="text1">Available</div>
+                    <div class="text2">E1/E10</div>
+                    <div class="text3"></div>
+                </div>
+                <div class="button plain-button" id="room32">
+                    <div class="text1">Available</div>
+                    <div class="text2">E2/E4</div>
+                    <div class="text3"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+

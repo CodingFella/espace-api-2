@@ -1,0 +1,215 @@
+/* Reset some default browser styles */
+.rectangle {
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    left: 0px;
+    top: 0px;
+    background: gray;
+}
+
+hr {
+    margin-left: 0;
+    margin-right: 0;
+    position: relative;
+    border: none;
+    height: 3px;
+    background: rgba(168, 168, 168, 1);
+}
+
+/* Container to hold the two columns */
+.container {
+    position: absolute;
+    width: 100%;
+    top: 80px;
+    padding: 0px;
+    display: flex;
+}
+
+/* Left Column */
+.left-column {
+    flex: 1; /* Adjust the flex value to control the width */
+    padding: 50px;
+    background: #F2F2F2;
+}
+
+/* Right Column */
+.right-column {
+    display: flex;
+    flex-direction: column;
+    flex: 9; /* Adjust the flex value to control the width */
+    padding: 40px;
+    background: transparent;
+}
+
+h3 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #000000;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+
+/* Main Label for Rooms */
+h2 {
+
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    color: #000000;
+    margin-bottom: 0px;
+
+}
+
+.text-filter {
+
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    color: #000000;
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+}
+
+.button-region {
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+    display: block;
+    width: 100%;
+    background: rgba(236, 236, 236, 1);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.occupied-button:hover {
+    cursor: pointer;
+}
+
+.occupied-button {
+    transition: height 0.1s ease;
+    display: flex;
+    flex-direction: column;
+    display: block;
+    width: 100%;
+    background: pink;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.expanded-button {
+    display: block;
+    width: 180px;
+    margin: 15px;
+    padding: 10px;
+    height: 0px;
+}
+
+.plain-button{
+    position: relative;
+    display: flex;
+    height: 30px;
+    width: 180px;
+    margin: 15px;
+    overflow: hidden;
+}
+
+.api-button {
+    margin-top: 20px;
+    background-color: #4499c9;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    height: 25px;
+}
+
+.api-button:hover {
+    background-color: #36789e;
+    cursor: pointer;
+}
+
+.api-button-cooldown {
+    background-color: darkgray;
+}
+
+.api-button-cooldown:hover {
+    background-color: gray;
+    cursor: not-allowed;
+}
+
+.status-text {
+    width: auto;
+    height: 14px;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+
+    color: #F2F2F2;
+}
+
+.text1 {
+
+    width: auto;
+    height: 14px;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+
+    color: #000000;
+
+}
+
+.text2 {
+    /* Room Name */
+
+    width: auto;
+    height: 18px;
+    margin-bottom: 5px;
+
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+
+    color: #000000;
+}
+
+.text3 {
+    /* Room Name */
+
+    width: auto;
+    height: 14px;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+    /* identical to box height */
+
+    color: #000000;
+}
